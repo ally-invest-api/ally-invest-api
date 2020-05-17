@@ -1,0 +1,28 @@
+{
+  "name": "ally-invest-api",
+  "version": "1.0.1",
+  "description": "Abstraction for ally invest (trade king) api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ally-invest-api/ally-invest-api.git"
+  },
+  "keywords": [
+    "tradeking",
+    "ally",
+    "allyinvest",
+    "stock",
+    "api"
+  ],
+  "author": "ip",
+  "license": "MIT",
+  "homepage": "https://github.com/ally-invest-api/ally-invest-api.git#readme",
+  "dependencies": {
+    "js2xmlparser": "^4.0.1",
+    "lodash": "^4.17.15",
+    "oauth": "^0.9.15"
+  }
+}
