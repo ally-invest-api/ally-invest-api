@@ -103,7 +103,7 @@ This will return a listing of news headlines based on the current symbol(s).Note
 ###  memberProfile()
 This will return general information associated with the user. More importantly it will also return all of the account numbers and account information for the user.
 
-### getTimeSalesForSymbols({ symbols = 'AAPL', startdate = '2020-04-06', enddate = '2020-05-06', [interval = '1min'] })
+### getTimeSalesForSymbols({ symbols = 'AAPL', startdate = '2020-04-06', enddate = '2020-05-06', [interval = '1min'], [starttime: 'hh:mm'] })
 This call will return time and sales quote data based on a symbol passed as a query parameter (see query parameters below).
 
 ### getMarketQuotesForSymbols({ symbols, [fids] })
@@ -118,6 +118,12 @@ This will return the current server timestamp if the API and its backend systems
 This will retrieve a list of watchlists for the authenticated user if no watchListId is passed. Or will get the watchlist specified.
 ### newWatchList(watchListId, symbols)
 This will create a watchlist with the specified id for the authenticated user.
+
+### optionsStrikes({ symbol = 'GE' })
+This call will return the full list of available option strikes for a given symbol.
+
+### optionsExpirations({ symbol = 'GE' })
+This call will return the full list of available option expiration dates for a given symbol.
 
 ## ToDo's
 ___

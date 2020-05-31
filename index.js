@@ -265,6 +265,14 @@ class allyinvestApi {
     }
     return this._getApiEndPoint(`watchlists`, `id=${watchListName}&symbols=${formatedSymbols}`, null, { useGet: false, postBody: null });
   }
+
+  optionsStrikes({ symbol = 'GE' }) {
+    return this._getApiEndPoint(`market/options/strikes`, `symbol=${symbol}`);
+  }
+
+  optionsExpirations({ symbol = 'GE' }) {
+    return this._getApiEndPoint(`market/options/expirations`, `symbol=${symbol}`);
+  }
 }
 
 module.exports =  allyinvestApi;
